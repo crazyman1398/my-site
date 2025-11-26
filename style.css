@@ -1,0 +1,478 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #000;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* Герой секция */
+.hero {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d3748 100%);
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    border-bottom: 1px solid #333;
+}
+
+.hero h1 {
+    font-size: 2.8em;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.subtitle {
+    font-size: 1.3em;
+    color: #ccc;
+    margin-bottom: 15px;
+}
+
+.hero-text {
+    font-size: 1.1em;
+    color: #999;
+    max-width: 300px;
+    margin: 0 auto;
+    font-style: italic;
+}
+
+/* Секции */
+section {
+    padding: 40px 20px;
+    border-bottom: 1px solid #333;
+}
+
+h2 {
+    color: white;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+/* Текст извинения */
+.apology-section {
+    background: #1a1a1a;
+}
+
+.content-block {
+    max-width: 100%;
+}
+
+.apology-text {
+    font-size: 1.3em;
+    line-height: 1.7;
+    margin-bottom: 25px;
+    color: #ccc;
+    text-align: center;
+    font-weight: 500;
+}
+
+.reflection p {
+    color: #ccc;
+    margin-bottom: 20px;
+    line-height: 1.7;
+    font-size: 1.1em;
+}
+
+/* Главное видео */
+.main-video-section {
+    background: #000;
+    text-align: center;
+}
+
+.video-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.video-container video {
+    width: 100%;
+    border-radius: 12px;
+    background: #000;
+}
+
+/* Мои мысли */
+.thoughts-section {
+    background: #1a1a1a;
+}
+
+.thoughts-content {
+    max-width: 100%;
+}
+
+.thought-card {
+    background: rgba(255,255,255,0.05);
+    padding: 25px 20px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    border-left: 4px solid #667eea;
+}
+
+.thought-card h3 {
+    color: #667eea;
+    margin-bottom: 15px;
+    font-size: 1.3em;
+}
+
+.thought-card p {
+    color: #ccc;
+    line-height: 1.7;
+    font-size: 1.1em;
+}
+
+/* Моменты - БЕЗ ПОДПИСЕЙ */
+.moments-section {
+    background: #000;
+}
+
+.moments-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.media-item {
+    background: #1a1a1a;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #333;
+    aspect-ratio: 1;
+}
+
+.media-item img,
+.media-item video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Благодарность */
+.gratitude-section {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d3748 100%);
+}
+
+.gratitude-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.gratitude-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    background: rgba(255,255,255,0.05);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.gratitude-icon {
+    font-size: 2em;
+    flex-shrink: 0;
+}
+
+.gratitude-item p {
+    color: #ccc;
+    line-height: 1.7;
+    font-size: 1.1em;
+    margin: 0;
+}
+
+/* Обещания */
+.promises-section {
+    background: #1a1a1a;
+}
+
+.promises-intro {
+    color: #ccc;
+    text-align: center;
+    margin-bottom: 30px;
+    font-style: italic;
+    font-size: 1.1em;
+}
+
+.promise-item {
+    background: rgba(255,255,255,0.05);
+    padding: 25px 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #333;
+}
+
+.promise-item h3 {
+    color: #38b2ac;
+    margin-bottom: 12px;
+    font-size: 1.2em;
+}
+
+.promise-item p {
+    color: #ccc;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Финальная секция */
+.final-section {
+    background: linear-gradient(135deg, #000 0%, #1a1a1a 100%);
+}
+
+.final-content {
+    max-width: 100%;
+}
+
+.final-content h2 {
+    color: white;
+    margin-bottom: 30px;
+}
+
+.final-text p {
+    color: #ccc;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+.final-text strong {
+    color: #fff;
+}
+
+.signature {
+    text-align: center;
+    margin-top: 40px;
+    color: #667eea;
+}
+
+.signature p {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+.name {
+    font-size: 1.4em !important;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.date {
+    color: #666;
+    font-size: 0.9em !important;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+/* Адаптивность для планшетов */
+@media (min-width: 768px) {
+    .container {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    
+    .hero {
+        padding: 70px 40px;
+    }
+    
+    .hero h1 {
+        font-size: 3.2em;
+    }
+    
+    section {
+        padding: 50px 30px;
+    }
+    
+    .moments-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+    
+    .reflection p {
+        font-size: 1.2em;
+    }
+    
+    .thought-card p {
+        font-size: 1.2em;
+    }
+}
+
+/* Улучшения для мобильных */
+@media (max-width: 767px) {
+    .hero {
+        padding: 40px 20px;
+    }
+    
+    .hero h1 {
+        font-size: 2.3em;
+    }
+    
+    h2 {
+        font-size: 1.7em;
+    }
+    
+    section {
+        padding: 30px 20px;
+    }
+    
+    .apology-text {
+        font-size: 1.2em;
+    }
+    
+    .moments-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+    }
+}
+
+/* Плавная прокрутка */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Кастомный скроллбар */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #444;
+}
+
+/* Анимации появления */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* Стиль для подзаголовка раздела */
+.section-subtitle {
+    text-align: center;
+    color: #888;
+    font-size: 1.1em;
+    margin-top: -20px;
+    margin-bottom: 30px;
+    font-style: italic;
+    line-height: 1.5;
+}
+/* Скрытые послания - визуально не выделяются */
+.hidden-message {
+    /* Ничего не меняем, выглядит как обычный элемент */
+}
+
+.hidden-text {
+    color: inherit; /* Такой же цвет как основной текст */
+    /* Только она поймет отсылку к браслету */
+}
+
+/* Можно добавить еле заметные детали */
+.media-item.hidden-message {
+    border: 1px solid rgba(102, 126, 234, 0.3); /* Еле заметная голубая рамка */
+}
+
+/* Оптимизация загрузки */
+.media-item img,
+.media-item video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    background: #000;
+    /* Предотвращает скачки макета */
+    aspect-ratio: 1;
+}
+
+/* Предзагрузка только первого экрана */
+.hero {
+    will-change: transform;
+}
+
+/* Остальные элементы грузятся по мере необходимости */
+section {
+    content-visibility: auto;
+}
+/* Анимации для всех элементов */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Стили для медиа-элементов */
+.media-item {
+    transition: transform 0.3s ease;
+    cursor: pointer !important;
+}
+
+.media-item:active {
+    transform: scale(0.95);
+}
+
+/* Индикатор кликабельности */
+.media-item::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: transparent;
+    transition: background 0.3s ease;
+}
+
+.media-item:active::after {
+    background: rgba(255,255,255,0.1);
+}
+
+/* Индикатор загрузки основного видео */
+.video-container {
+    position: relative;
+}
+
+.video-container::before {
+    content: 'Загрузка видео...';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ccc;
+    background: rgba(0,0,0,0.7);
+    padding: 10px 20px;
+    border-radius: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.video-container.video-loading::before {
+    opacity: 1;
+}
